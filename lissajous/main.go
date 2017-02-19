@@ -10,6 +10,8 @@ import (
 	"os"
 )
 
+// @desc lissajous generates a gif image based on the values of variables provided
+
 var palette = []color.Color{color.White, color.Black}
 
 const (
