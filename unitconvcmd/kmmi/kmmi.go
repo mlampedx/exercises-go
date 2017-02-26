@@ -12,7 +12,7 @@ func main() {
 	for _, arg := range os.Args[1:] {
 		d, err := strconv.ParseFloat(arg, 64)
 		if err != nil {
-			fmt.Fprintf(os.Stderr, "kmm: %v\n", err)
+			fmt.Fprintf(os.Stderr, "kmmi: %v\n", err)
 			os.Exit(1)
 		}
 		km := unitconv.Kilometers(d)
