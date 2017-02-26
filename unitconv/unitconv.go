@@ -33,6 +33,14 @@ func (ft Feet) String() string {
 	return fmt.Sprintf("%g ft", ft)
 }
 
+func (km Kilometers) String() string {
+	return fmt.Sprintf("%g km", km)
+}
+
+func (mi Miles) String() string {
+	return fmt.Sprintf("%g mi", mi)
+}
+
 func (lbs Pounds) String() string {
 	return fmt.Sprintf("%g lbs", lbs)
 }
