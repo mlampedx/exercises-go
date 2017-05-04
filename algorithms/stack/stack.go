@@ -26,6 +26,5 @@ func pop(stack []int) []int {
 
 func remove(stack []int, i int) []int {
 	copy(stack[:i], stack[i+1:])
-	fmt.Println(stack)
 	return stack[:len(stack)-1]
 }
