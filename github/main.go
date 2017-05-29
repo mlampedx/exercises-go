@@ -9,7 +9,10 @@ import (
 
 // Must method parses the template to ensure no errors;
 // New method creates and returns a new template
-var report = template.Must(template.New("issuelist").Parse(IssueList))
+var report = template.Must(template.New("issuelist").
+
+	// Funcs adds daysAgo as a function accessible inside the template
+	Funcs(template.FuncMap{"daysAgo": daysAgo}).Parse(IssueList))
 
 func main() {
 	result, err := SearchIssues(os.Args[1:])
