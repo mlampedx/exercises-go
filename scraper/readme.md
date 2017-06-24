@@ -9,7 +9,9 @@ Given a working installation of golang with workspace paths properly set,
 cd into this directory and run the following commands from the terminal:
 
 `
+
 go build
 
 ./scraper $handle > $dest.html
+
 `
