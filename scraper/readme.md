@@ -10,5 +10,6 @@ cd into this directory and run the following commands from the terminal:
 
 `
 go build
+
 ./scraper $handle > $dest.html
 `
